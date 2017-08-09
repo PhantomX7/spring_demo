@@ -21,4 +21,11 @@ public class TrackCoach implements Coach {
         return "Track   " + fortuneService.getFortune();
     }
 
+    private void doMyStartupStuff(){
+        System.out.println("Prepare Start....");
+    }
+    
+    private void doMyCleanupStuff(){
+        System.out.println("Prepare End....");
+    }
 }

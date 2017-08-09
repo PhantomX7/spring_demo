@@ -18,11 +18,12 @@ public class SetterInjectionDemo {
 				new ClassPathXmlApplicationContext("applicationContext.xml");
 				
 		// retrieve bean from spring container
-		Coach theCoach = context.getBean("cricketCoach", Coach.class);
+		CricketCoach theCoach = context.getBean("cricketCoach", CricketCoach.class);
 		
 		// call methods on the bean
 		System.out.println(theCoach.getDailyWorkout());
                 System.out.println(theCoach.getDailyFortune());
+                System.out.println(theCoach.getEmailAddress()+"---"+theCoach.getTeam());
 		
 		// close the context
 		context.close();
