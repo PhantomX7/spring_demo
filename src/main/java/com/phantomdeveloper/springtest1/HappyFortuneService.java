@@ -9,7 +9,7 @@ package com.phantomdeveloper.springtest1;
  *
  * @author Phantom
  */
-public class HappyFortuneSrevice implements FortuneService{
+public class HappyFortuneService implements FortuneService{
 
     @Override
     public String getFortune() {
